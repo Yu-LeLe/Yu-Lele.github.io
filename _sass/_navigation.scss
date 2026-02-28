@@ -312,10 +312,7 @@
 }
 
 .lang-switch {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 1rem;
   font-size: 0.75rem;
   padding: 0.15rem 0.5rem;
   border: 1px solid $border-color;
