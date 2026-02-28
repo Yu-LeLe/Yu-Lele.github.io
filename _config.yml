@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "夏元俊"
-description              : "网络空间安全博士生｜隐私保护机器学习、入侵检测与流量识别"
+description              : "网络空间安全｜隐私保护机器学习、入侵检测与流量识别"
 repository               : "Yu-LeLe/Yu-Lele.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :
 author:
   name             : "夏元俊"
   avatar           : "images/Xia.jpg"
-  bio              : "网络空间安全博士生（桂林电子科技大学）"
+  bio              : "博士研究生（桂林电子科技大学）"
   location         : "河南驻马店 / 广西桂林"
   employer         :
   pubmed           :
