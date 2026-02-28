@@ -1,6 +1,5 @@
 My research primarily focuses on **privacy-preserving machine learning, intrusion detection, and traffic identification**. I welcome academic exchanges and collaborations.
 
-- **Name**: Yuanjun Xia
 - **Phone**: +86 13839637178
 - **Email**: [xiaujun@163.com](mailto:xiaujun@163.com)
 - **Political Status**: CPC Member
