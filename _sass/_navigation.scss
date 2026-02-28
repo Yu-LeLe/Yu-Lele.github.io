@@ -174,8 +174,6 @@
 
 .greedy-nav {
   position: relative;
-  display: flex;
-  align-items: center;
   min-width: 250px;
   background: $background-color;
 
@@ -204,13 +202,11 @@
   }
 
   .visible-links {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+    display: table;
 
     li {
-      list-style: none;
-      white-space: nowrap;
+      display: table-cell;
+      vertical-align: middle;
 
       &:first-child {
         font-weight: bold;
@@ -313,21 +309,26 @@
     }
   }
 
-  .lang-switch {
-    margin-left: auto;
-    font-size: 0.75rem;
-    padding: 0.2rem 0.6rem;
-    border: 1px solid $border-color;
-    border-radius: 1rem;
-    color: $muted-text-color;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: $global-transition;
+}
 
-    &:hover {
-      color: $masthead-link-color-hover;
-      border-color: $masthead-link-color-hover;
-    }
+.lang-switch {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid $border-color;
+  border-radius: 1rem;
+  color: $muted-text-color;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: $global-transition;
+
+  &:hover {
+    color: $masthead-link-color-hover;
+    border-color: $masthead-link-color-hover;
+    text-decoration: none;
   }
 }
 
