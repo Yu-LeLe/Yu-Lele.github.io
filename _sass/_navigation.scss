@@ -306,6 +306,27 @@
       }
     }
   }
+
+  .lang-switch {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid $border-color;
+    border-radius: 1rem;
+    color: $muted-text-color;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: $global-transition;
+    margin: 0;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+      border-color: $masthead-link-color-hover;
+    }
+  }
 }
 
 
