@@ -204,11 +204,13 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
+      list-style: none;
+      white-space: nowrap;
 
       &:first-child {
         font-weight: bold;
