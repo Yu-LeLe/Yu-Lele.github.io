@@ -1,0 +1,19 @@
+# English navigation links
+main:
+  - title: "Education"
+    url: "/en/#educations"
+
+  - title: "Publications"
+    url: "/en/#publications"
+
+  - title: "Projects"
+    url: "/en/#projects"
+
+  - title: "Honors"
+    url: "/en/#honors"
+
+  - title: "Activities"
+    url: "/en/#news"
+
+  - title: "Skills"
+    url: "/en/#skills"

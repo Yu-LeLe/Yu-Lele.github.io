@@ -2,12 +2,25 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button>
+          <div class="navicon"></div>
+        </button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">主页</a></li>
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% if page.lang == 'en' %}
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a
+              href="/en/#about-me">Home</a></li>
+          {% for link in site.data.navigation_en.main %}
+          <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          <li class="masthead__menu-item"><a href="/" title="切换到中文">🇨🇳 中文</a></li>
+          {% else %}
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">主页</a>
+          </li>
+          {% for link in site.data.navigation.main %}
+          <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          <li class="masthead__menu-item"><a href="/en/" title="Switch to English">🇬🇧 English</a></li>
+          {% endif %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
